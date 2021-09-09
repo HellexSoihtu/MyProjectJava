@@ -60,10 +60,26 @@ public class MainClass
         }
     }
 
+    // задание 4
+    // Создайте метод printWordNTimes,
+    // которому в качестве аргументов передается строка и число,
+    // метод должен отпечатать в консоль указанную строку,
+    // указанное количество раз
+
+    public static void printWordNTimes(String word, int a)
+    {
+        for (int i = 0; i < a; i++)   // N раз
+        {
+            System.out.println(word); // вывести значение строки
+        }
+    }
+
     public static void main(String[] args)
-    {     within10and20(30, -5);
+    {
+          within10and20(30, -5);
           isPositiveOrNegative(14);
           isNegativeOrPositive(666);
+          printWordNTimes("Данила", 4);
     }
 }
 
