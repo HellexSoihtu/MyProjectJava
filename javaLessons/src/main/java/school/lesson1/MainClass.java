@@ -1,6 +1,7 @@
 package school.lesson1;
 
-public class MainClass {
+public class MainClass
+{
     // задание 1
     // Создайте метод printThreeWords(),
     // который при вызове должен отпечатать в столбец три слова:
