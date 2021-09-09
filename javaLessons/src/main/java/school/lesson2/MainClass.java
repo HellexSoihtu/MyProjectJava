@@ -23,9 +23,47 @@ public class MainClass
         }
     }
 
+    // задание 2
+    // Создайте метод isPositiveOrNegative,
+    // который принимает в качестве параметра целое число
+    // (0 считается положительным) и печатает в консоль,
+    // положительное или отрицательное число передали.
+
+    public static void isPositiveOrNegative(int a)
+    {
+        if (a >= 0)   // если a >=0
+        {
+            System.out.println("Результат положительный"); // вывести "Результат положительный"
+        }
+        else          // иначе
+        {
+            System.out.println("Результат отрицательный"); // вывести "Результат отрицательный"
+        }
+    }
+
+    // задание 3
+    // Создайте метод isNegative,
+    // который принимает в качестве параметра целое число
+    // и возвращает true, если положительное,
+    // иначе - false
+    public static boolean isNegative(int a)
+    {
+        if ( a>=0 )                      // если a >=0
+        {
+            System.out.println("true " + "Результат положительный");  // вывести true
+            return true;
+        }
+        else                             // иначе
+        {
+            System.out.println("false " + "Результат отрицательный"); // вывести false
+            return false;
+        }
+    }
+
     public static void main(String[] args)
     {     within10and20(30, -5);
-
+          isPositiveOrNegative(14);
+          isNegative(666);
     }
 }
 
