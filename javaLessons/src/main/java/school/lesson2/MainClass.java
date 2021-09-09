@@ -74,12 +74,36 @@ public class MainClass
         }
     }
 
+    // задание 5
+    // Создайте метод isLeap, который определяет,
+    // является ли год високосным, и возвращает boolean
+    // (високосный - true, не високосный - false).
+    // Каждый 4-й год является високосным, кроме каждого 100-го,
+    // при этом каждый 400-й – високосный.
+
+    public static boolean isLeap(int year) // объявление переменной года
+    {
+        if (!(year % 4 == 0) || ((year % 100 == 0) && !(year % 400 == 0))) // условие
+        {
+            System.out.println(year + " не високосный"); // если не високосный - false
+            return false;
+        }
+
+        else
+        {
+            System.out.println(year + " високосный");    // если високосный - true
+            return true;
+        }
+
+    }
+
     public static void main(String[] args)
     {
           within10and20(30, -5);
           isPositiveOrNegative(14);
           isNegativeOrPositive(666);
           printWordNTimes("Данила", 4);
+          isLeap(2021);
     }
 }
 
