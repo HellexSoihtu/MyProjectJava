@@ -46,7 +46,7 @@ public class MainClass
     // который принимает в качестве параметра целое число
     // и возвращает true, если положительное,
     // иначе - false
-    public static boolean isNegative(int a)
+    public static boolean isNegativeOrPositive(int a)
     {
         if ( a>=0 )                      // если a >=0
         {
@@ -63,7 +63,7 @@ public class MainClass
     public static void main(String[] args)
     {     within10and20(30, -5);
           isPositiveOrNegative(14);
-          isNegative(666);
+          isNegativeOrPositive(666);
     }
 }
 
