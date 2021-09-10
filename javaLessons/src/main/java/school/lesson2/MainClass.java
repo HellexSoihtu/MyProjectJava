@@ -97,6 +97,30 @@ public class MainClass
 
     }
 
+    // задание 6
+    // Задать целочисленный массив, состоящий из элементов 0 и 1.
+    // Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ].
+    // С помощью цикла и условия заменить 0 на 1, 1 на 0;
+
+    public static void invertArray()
+    {
+        int[] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0}; // задание массива
+        System.out.print("До: ");                 // вывод слова "До"
+        for (int i = 0; i < arr.length; i++)
+
+        {
+            System.out.print(arr[i] + " ");         //вывод первоначального массива
+            if (arr[i] == 0) arr[i] = 1;
+            else arr[i] = 0;
+        }
+        System.out.println();
+        System.out.print("После:  ");               // вывод слова "После"
+        for (int i : arr)
+        {
+            System.out.print(i + " ");              // вывод измененного массива
+        }
+    }
+
     public static void main(String[] args)
     {
           within10and20(30, -5);
@@ -104,6 +128,7 @@ public class MainClass
           isNegativeOrPositive(666);
           printWordNTimes("Данила", 4);
           isLeap(2021);
+          invertArray();
     }
 }
 
