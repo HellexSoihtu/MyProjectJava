@@ -153,7 +153,33 @@ public class MainClass
             System.out.print(" " + arr[i]);                   // вывод измененного массива
         }
         System.out.println();
+        System.out.println();
     }
+
+    // задание 9
+    // Создать квадратный двумерный целочисленный массив
+    // (количество строк и столбцов одинаковое),
+    // с помощью цикла(-ов) заполнить его диагональные элементы
+    // единицами (можно только одну из диагоналей, если обе сложно).
+    // Определить элементы одной из диагоналей можно по следующему
+    // принципу: индексы таких элементов равны,
+    // то есть [0][0], [1][1], [2][2], …, [n][n];
+
+    public static void fillDiagonal()
+    {
+        int[][] array = new int[4][4];
+        for (int i = 0; i < 4; i++)
+        {
+            array[i][i] = 1;
+        }
+        for (int i = 0; i < 4; i++)
+        {
+            for (int j = 0; j < 4; j++)
+                System.out.printf("%3d", array[i][j]);
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args)
     {
           within10and20(30, -5);
@@ -164,6 +190,7 @@ public class MainClass
           invertArray();
           fillArray();
           changeArray();
+          fillDiagonal();
     }
 }
 
