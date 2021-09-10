@@ -19,6 +19,7 @@ public class MainClass
         else                             // иначе
         {
             System.out.println("false"); // вывести false
+            System.out.println();
             return false;
         }
     }
@@ -39,6 +40,7 @@ public class MainClass
         {
             System.out.println("Результат отрицательный"); // вывести "Результат отрицательный"
         }
+        System.out.println();
     }
 
     // задание 3
@@ -59,6 +61,7 @@ public class MainClass
             System.out.println("false " + "Результат отрицательный"); // вывести false
             return false;
         }
+
     }
 
     // задание 4
@@ -71,8 +74,10 @@ public class MainClass
     {
         for (int i = 0; i < a; i++)   // N раз
         {
+            System.out.println();
             System.out.println(word); // вывести значение строки
         }
+        System.out.println();
     }
 
     // задание 5
@@ -106,6 +111,7 @@ public class MainClass
     public static void invertArray()
     {
         int[] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0}; // задание массива
+        System.out.println();
         System.out.print("До: ");                 // вывод слова "До"
         for (int i = 0; i < arr.length; i++)
 
@@ -120,6 +126,7 @@ public class MainClass
         {
             System.out.print(i + " ");              // вывод измененного массива
         }
+        System.out.println();
         System.out.println();
     }
     // задание 7
