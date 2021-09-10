@@ -119,6 +119,22 @@ public class MainClass
         {
             System.out.print(i + " ");              // вывод измененного массива
         }
+        System.out.println();
+    }
+    // задание 7
+    // Задать пустой целочисленный массив длиной 100.
+    // С помощью цикла заполнить его значениями
+    // 1 2 3 4 5 6 7 8 … 100;
+
+    public static void fillArray()
+    {
+        int[] arr = new int[100];                             // задание массива
+        for (int i = 0; i < arr.length; i++)
+        {
+            arr[i] = i + 1;
+            System.out.println("arr[" + i + "] = " + arr[i]); // вывод элементов массива
+        }
+
     }
 
     public static void main(String[] args)
@@ -129,6 +145,7 @@ public class MainClass
           printWordNTimes("Данила", 4);
           isLeap(2021);
           invertArray();
+          fillArray();
     }
 }
 
