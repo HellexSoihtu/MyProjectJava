@@ -6,7 +6,7 @@ public class MainClass
     // Создайте метод within10and20,
     // который принимает на вход два целых числа и проверяет,
     // что их сумма лежит в пределах от 10 до 20 (включительно):
-    // если да – вернуть true, иначе – false.
+    // если да – вернуть true, иначе – false
 
     public static boolean within10and20(int a, int b)
     {
@@ -27,7 +27,7 @@ public class MainClass
     // Создайте метод isPositiveOrNegative,
     // который принимает в качестве параметра целое число
     // (0 считается положительным) и печатает в консоль,
-    // положительное или отрицательное число передали.
+    // положительное или отрицательное число передали
 
     public static void isPositiveOrNegative(int a)
     {
@@ -46,6 +46,7 @@ public class MainClass
     // который принимает в качестве параметра целое число
     // и возвращает true, если положительное,
     // иначе - false
+
     public static boolean isNegativeOrPositive(int a)
     {
         if ( a>=0 )                      // если a >=0
@@ -79,7 +80,7 @@ public class MainClass
     // является ли год високосным, и возвращает boolean
     // (високосный - true, не високосный - false).
     // Каждый 4-й год является високосным, кроме каждого 100-го,
-    // при этом каждый 400-й – високосный.
+    // при этом каждый 400-й – високосный
 
     public static boolean isLeap(int year) // объявление переменной года
     {
@@ -100,7 +101,7 @@ public class MainClass
     // задание 6
     // Задать целочисленный массив, состоящий из элементов 0 и 1.
     // Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ].
-    // С помощью цикла и условия заменить 0 на 1, 1 на 0;
+    // С помощью цикла и условия заменить 0 на 1, 1 на 0
 
     public static void invertArray()
     {
@@ -124,7 +125,7 @@ public class MainClass
     // задание 7
     // Задать пустой целочисленный массив длиной 100.
     // С помощью цикла заполнить его значениями
-    // 1 2 3 4 5 6 7 8 … 100;
+    // 1 2 3 4 5 6 7 8 … 100
 
     public static void fillArray()
     {
@@ -139,7 +140,7 @@ public class MainClass
 
     // задание 8
     // Задать массив [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ]
-    // пройти по нему циклом, и числа меньше 6 умножить на 2;
+    // пройти по нему циклом, и числа меньше 6 умножить на 2
 
     public static void changeArray()
     {
@@ -163,21 +164,37 @@ public class MainClass
     // единицами (можно только одну из диагоналей, если обе сложно).
     // Определить элементы одной из диагоналей можно по следующему
     // принципу: индексы таких элементов равны,
-    // то есть [0][0], [1][1], [2][2], …, [n][n];
+    // то есть [0][0], [1][1], [2][2], …, [n][n]
 
     public static void fillDiagonal()
     {
-        int[][] array = new int[4][4];
-        for (int i = 0; i < 4; i++)
+        int[][] array = new int[4][4];     // задание массива
+        for (int i = 0; i < 4; i++)        // цикл
         {
             array[i][i] = 1;
         }
         for (int i = 0; i < 4; i++)
         {
             for (int j = 0; j < 4; j++)
-                System.out.printf("%3d", array[i][j]);
+                System.out.printf("%3d", array[i][j]);   // вывод конечного массива
+            System.out.println();
             System.out.println();
         }
+    }
+
+    // задание 10
+    // Написать метод, принимающий на вход два аргумента: len и initialValue,
+    // и возвращающий одномерный массив типа int длиной len,
+    // каждая ячейка которого равна initialValue
+
+    public static int[] returnLenArr (int len, int initialValue)
+    {
+        int arr[] = new int[len];                                // длина массива
+        for (int i = 0; i < arr.length; i++){
+            arr[i] = initialValue;                               // значение ячейки
+            System.out.println("arr[" + i + "] = " + arr[i]);   // вывод элементов массива
+        }
+        return arr;
     }
 
     public static void main(String[] args)
@@ -191,6 +208,8 @@ public class MainClass
           fillArray();
           changeArray();
           fillDiagonal();
+          returnLenArr(4, 5);
+
     }
 }
 
