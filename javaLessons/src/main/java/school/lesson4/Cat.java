@@ -6,7 +6,7 @@ public class Cat extends Animal {
     @Override
    public void running() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введите расстояние: ");
+        System.out.println("Бег: введите расстояние: ");
         int chosenDistance = sc.nextInt();
         if (chosenDistance < 200 && chosenDistance > 0) {
             System.out.println("Бег: кот пробежал " + chosenDistance + " м");

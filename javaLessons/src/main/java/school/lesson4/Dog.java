@@ -6,7 +6,7 @@ public class Dog extends Animal{
    @Override
    public void running() {
        Scanner sc = new Scanner(System.in);
-       System.out.println("Введите расстояние: ");
+       System.out.println("Бег: введите расстояние: ");
        int chosenDistance = sc.nextInt();
        if (chosenDistance < 500 && chosenDistance > 0) {
             System.out.println("Бег: собака пробежала " + chosenDistance + " м");
@@ -18,7 +18,7 @@ public class Dog extends Animal{
     @Override
    public void swimming() {
        Scanner sc = new Scanner(System.in);
-       System.out.println("Введите расстояние: ");
+       System.out.println("Плавание: введите расстояние: ");
        int chosenDistance = sc.nextInt();
        if (chosenDistance < 10 && chosenDistance > 0) {
            System.out.println("Плавание: собака проплыла " + chosenDistance + " м");
