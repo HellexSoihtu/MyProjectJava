@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Cat extends Animal {
     @Override
-   public void running() {
+    public void run() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Бег: введите расстояние: ");
+        System.out.println("Введите расстояние: ");
         int chosenDistance = sc.nextInt();
         if (chosenDistance < 200 && chosenDistance > 0) {
             System.out.println("Бег: кот пробежал " + chosenDistance + " м");
@@ -16,7 +16,7 @@ public class Cat extends Animal {
         }
     }
     @Override
-   public void swimming() {
+    public void swim() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Плавание: кот не может плавать");
     }
