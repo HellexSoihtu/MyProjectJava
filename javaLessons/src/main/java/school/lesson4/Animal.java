@@ -8,24 +8,26 @@ public class Animal {
     public Animal() {
         count++;
     }
-    public void run() {
+    public void running() {
         Scanner sc = new Scanner(System.in);
         int chosenDistance = sc.nextInt();
     }
-    public void swim() {
+    public void swimming() {
         Scanner sc = new Scanner(System.in);
         int chosenDistance = sc.nextInt();
     }
     public static void main(String[] args) {
         Cat cat = new Cat();
-        cat.run();
-        cat.swim();
+        cat.running();
+        cat.swimming();
 
         Dog dog = new Dog();
-        dog.run();
-        dog.swim();
+        dog.running();
+        dog.swimming();
 
         Animal animal = new Animal();
+        animal.running();
+        animal.swimming();
         System.out.println("Всего животных: " + count);
     }
 }
